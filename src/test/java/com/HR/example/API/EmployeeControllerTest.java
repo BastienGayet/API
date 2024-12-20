@@ -21,7 +21,7 @@ public class EmployeeControllerTest {
     @Test
     public void testGetEmployees() throws Exception {
 
-        mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(jsonPath("$[0].firstname", is("Laurent")));
+        mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(jsonPath("$[0].firstName", is("Laurent")));
 
     }
 

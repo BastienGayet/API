@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS employees;
 
 CREATE TABLE employees (
-                           id INT IDENTITY PRIMARY KEY,
+                           id INT AUTO_INCREMENT  PRIMARY KEY,
                            first_name VARCHAR(250) NOT NULL,
                            last_name VARCHAR(250) NOT NULL,
                            mail VARCHAR(250) NOT NULL,
@@ -13,5 +13,4 @@ INSERT INTO employees (first_name, last_name, mail, password) VALUES
                                                                   ('Sophie', 'FONCEK', 'sophiefoncek@mail.com', 'sophie'),
                                                                   ('Agathe', 'FEELING', 'agathefeeling@mail.com', 'agathe');
 
--- Si nécessaire, validez la transaction
-COMMIT;
+commit;
