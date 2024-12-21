@@ -13,10 +13,10 @@ public class Employee {
     private Long id;
 
     @Column(name = "first_name") // JPA annotation to map this field to the first_name column in the database
-    private String firstname;
+    private String firstName;
 
     @Column(name = "last_name") // JPA annotation to map this field to the last_name column in the database
-    private String lastname;
+    private String lastName;
 
     private String mail;
 
